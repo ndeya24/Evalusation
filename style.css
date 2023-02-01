@@ -1,0 +1,120 @@
+/* Style de base */
+body {
+    background: rgb(178, 182, 194);
+    color: rgb(182, 121, 121);
+    font-family: Lato, sans-serif;
+  }
+  .container {
+    display: block;
+    width: 400px;
+    margin: 100px auto 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li * {
+    float: left;
+  }
+  li, h3 {
+    clear:both;
+    list-style:none;
+  }
+  input, button {
+    outline: none;
+  }
+  button {
+    background: none;
+    border: 0px;
+    color: rgb(230, 247, 4);
+    font-size: 15px;
+    width: 60px;
+    margin: 10px 0 0;
+    font-family: Lato, sans-serif;
+    cursor: pointer;
+  }
+  button:hover {
+    color: rgb(255, 8, 111);
+  }
+  /* Titre */
+  h3,
+  label[for='new-task'] {
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid rgb(253, 7, 7);
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid rgb(13, 14, 13);
+    background: rgb(253, 253, 250);
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    color: rgb(248, 9, 9);
+  }
+  input[type="text"]:focus {
+    color: rgb(10, 9, 10);
+  }
+  
+  /* Nouvelle tâche */
+  label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  input#new-task {
+    float: left;
+    width: 318px;
+  }
+  p > button:hover {
+    color: #f1da09;
+  }
+  
+  /* Liste de tâches */
+  li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(28, 4, 247);
+  }
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+  }
+  li >  input[type="text"] {
+    width: 226px;
+  }
+  li > .delete:hover {
+    color: #CF2323;
+  }
+  
+  /* Complété */
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: rgb(16, 231, 98)243, 19, 19);
+  }
+  
+  /* Modifier la tâche */
+  ul li input[type=text] {
+    display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }

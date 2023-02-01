@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>My Todo</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Ajouter une Tâche</label><input id="new-task" type="text"><button>Ajouter</button>
+      </p>
+      
+      <h3>Modifier Tâche</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Modifier les tâches</label><input type="text"><button class="modifier">Modifier</button><button class="suprimer">Suprimer</button></li>
+        <li class="editMode"><input type="checkbox"><label>Aller faire les courses</label><input type="text" value=""><button class="modifier">Modifier</button><button class="suprimer">Suprimer</button></li>
+        
+      </ul>
+      
+      <h3>Completer</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>Voir le médecin</label><input type="text"><button class="modifier">Modifier</button><button class="suprimer">Suprimer</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
